@@ -1,0 +1,14 @@
+.boxes{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}

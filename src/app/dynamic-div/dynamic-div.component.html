@@ -1,1 +1,5 @@
-<p>dynamic-div works!</p>
+<div class="wrapper" >
+<div class="boxes" *ngFor="let item of startingDiv; let i = index">
+    <button (click)="showAlert(i)">Click me</button>
+</div>
+</div>
