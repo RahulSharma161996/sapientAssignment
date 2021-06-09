@@ -1,0 +1,60 @@
+[
+    {
+        "ID": "1",
+        "Name": "Tom Kirkman",
+        "Gender": "Male",
+        "Maths": "99",
+        "Science": "88",
+        "SocialStudies": "91",
+        "English": "89"
+    },
+    {
+        "ID": "2",
+        "Name": "Aaron",
+        "Gender": "Male",
+        "Maths": "82",
+        "Science": "51",
+        "SocialStudies": "92",
+        "English": "59"
+    },{
+        "ID": "3",
+        "Name": "Seth",
+        "Gender": "Male",
+        "Maths": "86",
+        "Science": "83",
+        "SocialStudies": "71",
+        "English": "92"
+    },{
+        "ID": "4",
+        "Name": "Lyor",
+        "Gender": "Male",
+        "Maths": "93",
+        "Science": "78",
+        "SocialStudies": "88",
+        "English": "95"
+    },{
+        "ID": "5",
+        "Name": "Emily",
+        "Gender": "Female",
+        "Maths": "77",
+        "Science": "88",
+        "SocialStudies": "90",
+        "English": "75"
+    },{
+        "ID": "6",
+        "Name": "Lloyd",
+        "Gender": "Female",
+        "Maths": "79",
+        "Science": "88",
+        "SocialStudies": "80",
+        "English": "58"
+    },{
+        "ID": "7",
+        "Name": "Mike",
+        "Gender": "Male",
+        "Maths": "51",
+        "Science": "58",
+        "SocialStudies": "90",
+        "English": "94"
+    }
+]

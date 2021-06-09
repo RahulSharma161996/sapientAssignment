@@ -1,1 +1,19 @@
-<p>marksheet works!</p>
+<div class="wrapper">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th class="thead-dark" *ngFor="let heading of headings" (click)="sort(heading)"> {{heading}}
+                    <span *ngIf="sorting.header == heading">
+                    <fa-icon *ngIf="sorting.count == 2" [icon]="faLongArrowAltUp"></fa-icon>
+                    <fa-icon *ngIf="sorting.count == 1" [icon]="faLongArrowAltDown"></fa-icon>
+                </span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of marksheet">
+                <td *ngFor="let heading of headings">{{data[heading]}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
