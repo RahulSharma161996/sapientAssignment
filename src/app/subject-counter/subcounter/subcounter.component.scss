@@ -1,0 +1,17 @@
+.wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px;
+}
+
+.flex-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    label{
+        font-weight: bold;
+        font-size: 24px;
+    }
+}

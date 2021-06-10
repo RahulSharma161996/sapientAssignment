@@ -1,0 +1,11 @@
+<div>
+    <div class="action">
+        <span class="label">Enter timer limit</span>
+        <input type="number" class="text" [(ngModel)]="timerCount" [disabled]="isDisabled">
+    </div>
+    <div class="buttonGroup-right">
+        <button class="btn btn-primary" *ngIf="data.event != 'Start'" [disabled]="!timerCount" (click)="emitParent('Start')">Start</button>
+        <button class="btn btn-primary"  *ngIf="data.event == 'Start'" (click)="emitParent('Pause')">Pause</button>
+        <button class="btn btn-secondary" (click)="reset()"> Reset </button>
+    </div>
+</div>

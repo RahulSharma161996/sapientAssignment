@@ -21,11 +21,10 @@ export class MarksheetComponent implements OnInit {
 
   ngOnInit(): void {
     this.httpClient.get("assets/student.json").subscribe(data =>{
-      console.log(data);
+      let backup: any = data;
       this.marksheet = data;
-      this.backup = data;
+      this.backup = backup.slice(0);;
       this.headings = Object.keys(data[0]);
-      console.log(this.headings);
     })
   }
 
@@ -45,7 +44,7 @@ export class MarksheetComponent implements OnInit {
       this.marksheet.sort((a,b) => 0 - (a[this.sorting.header] > b[this.sorting.header] ? 1 : -1));
     }
     else{
-      this.marksheet = this.backup;
+      this.marksheet = this.backup.slice(0);
     }
   }
 }

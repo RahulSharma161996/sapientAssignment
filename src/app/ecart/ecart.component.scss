@@ -22,7 +22,7 @@
     display: flex;
     width: 100vw;
     flex-wrap: wrap;
-    padding: 0 7vw;
+    padding: 0 5vw;
 }
 
 .listview-item{
@@ -82,3 +82,9 @@
     width: auto;
     height: 100%;
 }
+
+@media only screen and (max-width: 1201px) {
+    .item-list{
+       padding: 0 3vw;
+    }
+  }

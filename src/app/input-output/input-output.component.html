@@ -1,1 +1,10 @@
-<p>input-output works!</p>
+<div class="wrapper">
+    <div class="upper">
+        <app-displaytimer class="borderBox" [timer]="timer" [action]="action"></app-displaytimer>
+        <app-actiontimer class="borderBox" (buttonClicked)="actionTimerEvent($event)"></app-actiontimer>
+    </div>
+    <div class="lower">
+        <app-logger class="noborderbox" [logs]="logs"></app-logger>
+        <app-counter class="noborderbox" [startCount]="startCount" [pauseCount]="pauseCount"></app-counter>
+    </div>
+</div>

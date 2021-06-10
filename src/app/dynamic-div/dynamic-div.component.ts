@@ -16,7 +16,7 @@ export class DynamicDivComponent implements OnInit {
 
   ngOnInit(): void {
     this.height = window.innerHeight;
-    this.startingDiv = Array(Math.ceil(this.height / 200));
+    this.startingDiv = Array(Math.ceil(this.height / 200) + 1);
   }
 
   @HostListener('window:scroll', [])
@@ -27,13 +27,12 @@ export class DynamicDivComponent implements OnInit {
     else {
       if (this.lastScroll <= window.scrollY) {
         this.lastScroll = window.scrollY;
-        if (this.lastScroll - this.lastAddition > 199){
+        if (this.lastScroll - this.lastAddition > 190){
           this.lastAddition = this.lastScroll;
           this.startingDiv.push(null);
         }
       }
     }
-    // console.log(this.lastScroll, this.lastAddition, window.innerHeight, document.body.offsetHeight, this.startingDiv.length);
   }
   showAlert(i) {
     alert("Button '"+i+ "' is  clicked")
