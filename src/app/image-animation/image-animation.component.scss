@@ -1,0 +1,45 @@
+
+.banner:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 5px solid black;
+  }
+
+  .banner {
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 35vw;
+    top: 30vh;
+    text-align: center;
+    // transform: translate(-100px, -150px);
+    border: 5px solid black; 
+    outline: 5px solid black; 
+    animation: rotation 4s infinite linear;
+    box-shadow:
+    0 0 0 20px hsl(0, 0%, 10%),
+    0 0 0 30px hsl(0, 0%, 20%),
+    0 0 0 40px hsl(0, 0%, 30%),
+    0 0 0 50px hsl(0, 0%, 40%), 
+      0 0 0 60px hsl(0, 0%, 50%),
+      0 0 0 70px hsl(0, 0%, 60%),
+      0 0 0 80px hsl(0, 0%, 70%),
+      0 0 0 90px hsl(0, 0%, 80%),
+      0 0 0 100px hsl(0, 0%, 90%);
+  }
+
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
