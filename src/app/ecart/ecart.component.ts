@@ -12,12 +12,14 @@ export class EcartComponent implements OnInit {
   faTh = faTh;
   faFilter = faFilter;
   faThList = faThList;
-  backup = []
+  backup = [];
+  isLoading = true;
   constructor(private ecartService: EcartService) { }
 
   ngOnInit(): void {
     this.ecartService.getProducts().subscribe(res => {
       this.products = res;
+      this.isLoading = false;
       this.backup = res;
     })
   }
