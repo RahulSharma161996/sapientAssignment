@@ -1,39 +1,35 @@
-
-.banner:before {
-    content: " ";
-    position: absolute;
-    z-index: -1;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border: 5px solid black;
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
   }
+
 
   .banner {
     padding: 20px;
-    width: 200px;
-    height: 200px;
-    position: relative;
-    left: 35vw;
-    top: 30vh;
+    width: 250px;
+    height: 120px;
     text-align: center;
-    // transform: translate(-100px, -150px);
     border: 5px solid black; 
-    outline: 5px solid black; 
     animation: rotation 4s infinite linear;
     box-shadow:
-    0 0 0 20px hsl(0, 0%, 10%),
-    0 0 0 30px hsl(0, 0%, 20%),
-    0 0 0 40px hsl(0, 0%, 30%),
-    0 0 0 50px hsl(0, 0%, 40%), 
-      0 0 0 60px hsl(0, 0%, 50%),
-      0 0 0 70px hsl(0, 0%, 60%),
-      0 0 0 80px hsl(0, 0%, 70%),
-      0 0 0 90px hsl(0, 0%, 80%),
-      0 0 0 100px hsl(0, 0%, 90%);
+        0 0 0 12px white,
+        0 0 0 17px black,
+        0 0 0 29px white,
+        0 0 0 34px black, 
+        0 0 0 47px white,
+        0 0 0 52px black,
+        0 0 0 65px white,
+        0 0 0 71px black,
+        0 0 0 85px white,
+        0 0 0 92px black,
+        0 0 0 105px white,
+        0 0 0 112px black;
   }
-
 
   @keyframes rotation {
     from {
